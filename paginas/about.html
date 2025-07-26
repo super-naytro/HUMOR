@@ -4,6 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../Estilos/General.css" />
+    <style>
+      main.container {
+        background: #fff;
+        color: #2d2d2d;
+        border-radius: 14px;
+        box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+        padding: 32px 28px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+      }
+      main.container h2, main.container h3, main.container p, main.container li {
+        color: #2d2d2d;
+      }
+    </style>
     <title>APANJE - Nosotros</title>
 </head>
 <body>
@@ -13,9 +27,14 @@
         <div class="logo-img">
             <img src="../Imagenes/logo.jpg" alt="APANJE Logo" id="logo" />
         </div>
+        <!-- Ventana modal para imagen ampliada -->
+        <div id="modal-img" class="modal-img" style="display:none;">
+            <span class="close-modal" id="close-modal">&times;</span>
+            <img id="modal-img-content" src="" alt="Imagen ampliada" />
+        </div>
         <div class="logo-text">
             <h1>APANJE</h1>
-            <p>Asociación de Padres y Amigos de Niños y Jóvenes Especiales</p>
+            <p>Asociación de Padres y Amigos de Niñ@s agradables y Jóvenes Especiales</p>
         </div>
     </div>
 
@@ -35,16 +54,14 @@
 
 <main class="container">
 
-    <section class="fade-in">
-        <h2>Sobre Nosotros</h2>
-        <p>APANJE es una organización sin fines de lucro dedicada a apoyar a niños y jóvenes con discapacidad y sus familias. Nuestro objetivo es promover la inclusión y el bienestar de nuestros beneficiarios a través de programas de rehabilitación, educación y apoyo familiar.</p>
-    </section>
+
 
     <section class="about-section fade-in">
         <h2>¿Quiénes Somos?</h2>
-        <p>
-            APANJE es una institución sin fines de lucro dedicada a mejorar la calidad de vida de los niños, niñas, jóvenes y adultos con discapacidad intelectual y otras patologías comórbidas.
-            Desarrollamos en nuestros alumnos y alumnas habilidades, destrezas, hábitos de salud, higiene y normas de conducta adecuadas para promover su desarrollo individual, social y laboral.
+        <p style="font-size:1.15rem; line-height:1.7; color:#6B4C3B; background:#fffbe7; border-radius:10px; padding:18px 22px; box-shadow:0 2px 8px rgba(217,164,65,0.08);">
+            Apanje trabaja con compromiso por la inclusión y el bienestar de personas con discapacidad intelectual.<br>
+            Ofrecemos espacios formativos donde se fortalecen sus capacidades personales, sociales y laborales.<br>
+            A través de programas educativos, talleres prácticos y acompañamiento integral, buscamos potenciar su autonomía y participación activa en la comunidad.
         </p>
 
         <div class="about-grid">
@@ -78,11 +95,89 @@
 
 </main>
 
+    <section class="photo-album fade-in">
+        <h2>Álbum de Fotos</h2>
+        <div class="album-grid">
+            <img src="../Imagenes/Album/Imagen- (1).png" alt="Foto institucional 1" />
+            <img src="../Imagenes/Album/Imagen- (2).png" alt="Foto institucional 2" />
+            <img src="../Imagenes/Album/Imagen- (3).png" alt="Foto institucional 3" />
+            <img src="../Imagenes/Album/Imagen- (4).png" alt="Foto institucional 4" />
+            <img src="../Imagenes/Album/Imagen- (5).png" alt="Foto institucional 5" />
+            <img src="../Imagenes/Album/Imagen- (6).png" alt="Foto institucional 6" />
+            <img src="../Imagenes/Album/Imagen- (7).png" alt="Foto institucional 7" />
+            <img src="../Imagenes/Album/Imagen- (8).png" alt="Foto institucional 8" />
+            <img src="../Imagenes/Album/Imagen- (9).png" alt="Foto institucional 9" />
+            <img src="../Imagenes/Album/Imagen- (10).png" alt="Foto institucional 10" />
+            <img src="../Imagenes/Album/Imagen- (11).png" alt="Foto institucional 11" />
+            <img src="../Imagenes/Album/Imagen- (12).png" alt="Foto institucional 12" />
+            <img src="../Imagenes/Album/Imagen- (13).png" alt="Foto institucional 13" />
+            <img src="../Imagenes/Album/Imagen- (14).png" alt="Foto institucional 14" />
+            <img src="../Imagenes/Album/Imagen- (15).png" alt="Foto institucional 15" />
+            <img src="../Imagenes/Album/Imagen- (16).png" alt="Foto institucional 16" />
+            <img src="../Imagenes/Album/Imagen- (17).png" alt="Foto institucional 17" />
+            <img src="../Imagenes/Album/Imagen- (18).png" alt="Foto institucional 18" />
+            <img src="../Imagenes/Album/Imagen- (19).png" alt="Foto institucional 19" />
+            <img src="../Imagenes/Album/Imagen- (20).png" alt="Foto institucional 20" />
+            <img src="../Imagenes/Album/Imagen- (21).png" alt="Foto institucional 21" />
+            <img src="../Imagenes/Album/Imagen- (22).png" alt="Foto institucional 22" />
+            <img src="../Imagenes/Album/Imagen- (23).png" alt="Foto institucional 23" />
+            <img src="../Imagenes/Album/Imagen- (24).png" alt="Foto institucional 24" />
+            <img src="../Imagenes/Album/Imagen- (25).png" alt="Foto institucional 25" />
+            <img src="../Imagenes/Album/Imagen- (26).png" alt="Foto institucional 26" />
+            <img src="../Imagenes/Album/Imagen- (27).png" alt="Foto institucional 27" />
+            <img src="../Imagenes/Album/Imagen- (28).png" alt="Foto institucional 28" />
+            <img src="../Imagenes/Album/Imagen- (29).png" alt="Foto institucional 29" />
+            <img src="../Imagenes/Album/Imagen- (30).png" alt="Foto institucional 30" />
+            <img src="../Imagenes/Album/Imagen- (31).png" alt="Foto institucional 31" />
+            <img src="../Imagenes/Album/Imagen- (32).png" alt="Foto institucional 32" />
+            <img src="../Imagenes/Album/Imagen- (33).png" alt="Foto institucional 33" />
+            <img src="../Imagenes/Album/Imagen- (34).png" alt="Foto institucional 34" />
+            <img src="../Imagenes/Album/Imagen- (35).png" alt="Foto institucional 35" />
+            <img src="../Imagenes/Album/Imagen- (36).png" alt="Foto institucional 36" />
+            <img src="../Imagenes/Album/Imagen- (37).png" alt="Foto institucional 37" />
+            <img src="../Imagenes/Album/Imagen- (38).png" alt="Foto institucional 38" />
+            <img src="../Imagenes/Album/Imagen- (39).png" alt="Foto institucional 39" />
+            <img src="../Imagenes/Album/Imagen- (40).png" alt="Foto institucional 40" />
+            <img src="../Imagenes/Album/Imagen- (41).png" alt="Foto institucional 41" />
+            <img src="../Imagenes/Album/Imagen- (42).png" alt="Foto institucional 42" />
+            <img src="../Imagenes/Album/Imagen- (43).png" alt="Foto institucional 43" />
+            <img src="../Imagenes/Album/Imagen- (44).png" alt="Foto institucional 44" />
+            <img src="../Imagenes/Album/Imagen- (45).png" alt="Foto institucional 45" />
+            <img src="../Imagenes/Album/Imagen- (46).png" alt="Foto institucional 46" />
+        </div>
+    </section>
+
 <footer>
-    <p>&copy; 2025 APANJE - Asociación de Padres y Amigos de Niños y Jóvenes Especiales</p>
+    <p>&copy; 2025 APANJE - Asociación de Padres y Amigos de Niñ@s agradables y Jóvenes Especiales</p>
 </footer>
 
 <script>
+    // Pop-up de imagen ampliada
+    document.addEventListener('DOMContentLoaded', () => {
+      const albumImgs = document.querySelectorAll('.album-grid img');
+      const modal = document.getElementById('modal-img');
+      const modalImg = document.getElementById('modal-img-content');
+      const closeModal = document.getElementById('close-modal');
+      albumImgs.forEach(img => {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', function() {
+          modal.style.display = 'flex';
+          modalImg.src = this.src;
+          modalImg.alt = this.alt;
+        });
+      });
+      closeModal.addEventListener('click', () => {
+        modal.style.display = 'none';
+        modalImg.src = '';
+      });
+      // Cerrar modal al hacer click fuera de la imagen
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.style.display = 'none';
+          modalImg.src = '';
+        }
+      });
+    });
     // Resaltar la sección activa en la barra de navegación
     document.addEventListener('DOMContentLoaded', () => {
         const navLinks = document.querySelectorAll('nav a');
