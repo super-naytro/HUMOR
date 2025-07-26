@@ -1,3 +1,92 @@
+/* --- Modal para imagen ampliada en álbum --- */
+.modal-img {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s;
+}
+.modal-img img {
+  max-width: 90vw;
+  max-height: 80vh;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+  background: #fff;
+  padding: 10px;
+}
+.modal-img .close-modal {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1001;
+  text-shadow: 0 2px 8px #000;
+  user-select: none;
+}
+.modal-img[style*="display: flex"] {
+  display: flex !important;
+}
+/* Álbum de fotos */
+.photo-album {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+  padding: 32px 28px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.photo-album h2 {
+  text-align: center;
+  color: #6B4C3B;
+  margin-bottom: 24px;
+}
+.album-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: center;
+}
+.album-grid img {
+  width: 220px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  background: #eee;
+}
+/* --- Footer siempre al fondo --- */
+html, body {
+  height: 100%;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main.container {
+  flex: 1 0 auto;
+}
+footer {
+  flex-shrink: 0;
+}
+/* Fondo blanco para la sección hero */
+.hero {
+  background: #fff;
+  border-radius: 0;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  padding: 32px 28px 28px 28px;
+  margin-bottom: 32px;
+  border-radius: 12px;
+}
 /* --- Noticias --- */
 .news-card {
   display: flex;
@@ -122,9 +211,10 @@ nav a.active-link {
 /* Tipografía general */
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #F5C3C2; /* Rosa suave como fondo */
+  background-image: url('../Imagenes/fondo.png');
   color: #000000; /* Texto negro */
   line-height: 1.6;
+  background-attachment: fixed;
 }
 
 /* Contenedor principal */
@@ -583,37 +673,4 @@ header nav ul li a {
 
 .btn-readmore:hover {
   background-color: #004080;
-}
-@media (max-width: 768px) {
-  header nav ul {
-    flex-direction: column;
-    display: none;
-    position: absolute;
-    top: 60px;
-    right: 10px;
-    background: #6B4C3B; /* Fondo igual al header */
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.16);
-    z-index: 100;
-  }
-  header nav ul.active {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-    cursor: pointer;
-    font-size: 28px;
-    user-select: none;
-    color: #fff;
-    margin-left: auto;
-    margin-right: 20px;
-    margin-top: 10px;
-  }
-}
-
-/* En desktop, ocultamos el toggle */
-.menu-toggle {
-  display: none;
 }
