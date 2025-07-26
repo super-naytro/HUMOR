@@ -211,7 +211,7 @@ nav a.active-link {
 /* Tipografía general */
 body {
   font-family: 'Poppins', sans-serif;
-  background-image: url('/Imagenes/fondo.png');
+  background-image: url('../Imagenes/fondo.png');
   color: #000000; /* Texto negro */
   line-height: 1.6;
   background-attachment: fixed;
